@@ -28,7 +28,7 @@ def bubble_chart_group2(df):
 
 def main(df):
     df = df[df['user_id']!= 227126] #exclude user_id 227126 as an outlier // decided on this to make the graphs cleaner
-    df['cohort_install'] = pd.to_datetime(df['cohort_install']) # this calculation was made in the googlesheet:
+    df['cohort_install'] = pd.to_datetime(df['cohort_install']) # 'cohort_install' is a calculation that was made in the googlesheet:
 
     df['sold_customer'] = pd.to_numeric(df['sold_customer'])
     df['agent_time_to_respond_minutes']=pd.to_numeric(df['agent_time_to_respond_minutes'])
